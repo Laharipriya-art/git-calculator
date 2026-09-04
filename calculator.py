@@ -14,3 +14,4 @@ if num2!=0:
 else:
 	print('Division: Cannot divide by Zero')
 
+print ('Thank you for using this calculator')
