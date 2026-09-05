@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <h1>Calculator</h1>
+
+      <label for="num1">First number</label>
+      <input id="num1" type="number" inputmode="decimal" />
+
+      <label for="num2">Second number</label>
+      <input id="num2" type="number" inputmode="decimal" />
+
+      <div class="buttons" aria-label="Calculator operations">
+        <button type="button" onclick="calculate('+')">Addition +</button>
+        <button type="button" onclick="calculate('-')">Subtraction −</button>
+        <button type="button" onclick="calculate('*')">Multiplication ×</button>
+        <button type="button" onclick="calculate('/')">Division ÷</button>
+        <button type="button" onclick="calculate('%')">Modulus %</button>
+        <button type="button" class="clear" onclick="clearCalculator()">Clear</button>
+      </div>
+
+      <p id="result" aria-live="polite">Result:</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
